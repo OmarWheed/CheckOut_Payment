@@ -6,13 +6,13 @@ void main() {
 }
 
 class CheckoutApp extends StatelessWidget {
-const CheckoutApp({super.key});
-@override
-Widget build(BuildContext context) {
-return const MaterialApp(
-  title: 'Checkout',
-  
-  home: MyCardView(),
-);
-}
+  const CheckoutApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Checkout',
+      home: MyCardView(),
+    );
+  }
 }
