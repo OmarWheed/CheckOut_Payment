@@ -1,4 +1,4 @@
-import 'package:checkout_payment/features/checkout/my_card/presentation/my_card_body.dart';
+import 'package:checkout_payment/features/checkout/my_card/widget/my_card_body.dart';
 import 'package:flutter/material.dart';
 
 import 'package:checkout_payment/core/utils/styles.dart';

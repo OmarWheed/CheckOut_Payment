@@ -1,18 +1,23 @@
+import 'package:checkout_payment/core/routes/on_generate_route.dart';
 import 'package:checkout_payment/features/checkout/my_card/views/my_card_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const CheckoutApp());
+  runApp(CheckoutApp(
+    appRoute: AppRoute(),
+  ));
 }
 
 class CheckoutApp extends StatelessWidget {
-  const CheckoutApp({super.key});
+  final AppRoute appRoute;
+  const CheckoutApp({super.key, required this.appRoute});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      onGenerateRoute: appRoute.onGenerateRoute,
       debugShowCheckedModeBanner: false,
       title: 'Checkout',
-      home: MyCardView(),
+      home: const MyCardView(),
     );
   }
 }
