@@ -15,11 +15,11 @@ class CustomBottom extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
+        height: 73,
         width: double.infinity,
-        margin:const EdgeInsets.symmetric(vertical:16), 
-        padding:const EdgeInsets.symmetric(horizontal: 75,vertical: 23),
+        alignment: Alignment.center,
+        margin: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
-          
           color: const Color(0xff34A853),
           borderRadius: BorderRadius.circular(15),
         ),

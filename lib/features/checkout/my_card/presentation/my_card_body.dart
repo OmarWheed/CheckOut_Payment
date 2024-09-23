@@ -1,6 +1,6 @@
 import 'package:checkout_payment/core/routes/route_name.dart';
 import 'package:checkout_payment/core/widget/custom_bottom.dart';
-import 'package:checkout_payment/features/checkout/my_card/widget/bill_form.dart';
+import 'package:checkout_payment/features/checkout/my_card/presentation/bill_form.dart';
 import 'package:flutter/material.dart';
 
 class AddCardBody extends StatelessWidget {
