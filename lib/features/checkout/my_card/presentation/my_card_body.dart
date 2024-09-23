@@ -1,3 +1,4 @@
+import 'package:checkout_payment/core/routes/route_name.dart';
 import 'package:checkout_payment/core/widget/custom_bottom.dart';
 import 'package:checkout_payment/features/checkout/my_card/presentation/bill_form.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +18,11 @@ class AddCardBody extends StatelessWidget {
           Expanded(child: Image.asset('assets/images/basket.png')),
           const SizedBox(height: 25),
           const BillDetails(),
-          const CustomBottom(
+          CustomBottom(
             text: 'Complete Payment',
+            onTap: () {
+              Navigator.of(context).pushNamed(RouteName.paymentDetails);
+            },
           )
         ],
       ),
