@@ -8,7 +8,8 @@ class PaymentDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: customAppBar(title: "Payment Details"),
-      body: const PaymentDetailsBody(),
+      body:const PaymentDetailsBody(),
+      
     );
   }
 }

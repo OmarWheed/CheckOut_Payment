@@ -1,11 +1,18 @@
 import 'package:checkout_payment/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
-AppBar customAppBar({required String title}) {
+AppBar customAppBar({
+  String? title,
+}) {
   return AppBar(
     centerTitle: true,
-    leading: const Icon(Icons.arrow_back),
-    title: Text(title),
+    elevation: 0,
+    leading: IconButton(
+      icon: const Icon(Icons.arrow_back),
+      onPressed: () {},
+    ),
+    title: Text(title ?? ''),
+    backgroundColor: Colors.transparent,
     titleTextStyle: Styles.textStyle25,
   );
 }
