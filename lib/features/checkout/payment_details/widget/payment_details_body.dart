@@ -1,3 +1,4 @@
+import 'package:checkout_payment/core/routes/route_name.dart';
 import 'package:checkout_payment/core/widget/custom_bottom.dart';
 import 'package:checkout_payment/features/checkout/payment_details/widget/custom_credit_card.dart';
 import 'package:checkout_payment/features/checkout/payment_details/widget/payment_method_list_view.dart';
@@ -40,9 +41,9 @@ class _PaymentDetailsBodyState extends State<PaymentDetailsBody> {
                       formKey.currentState!.save();
                     } else {
                       autovalidateMode = AutovalidateMode.always;
-                      setState(() {
-                        
-                      });
+                      Navigator.of(context).pushNamed(RouteName.successPayment);
+                      setState(() {});
+                      
                     }
                   },
                 ),
