@@ -1,7 +1,6 @@
 import 'package:checkout_payment/core/widget/custom_app_bar.dart';
-import 'package:checkout_payment/features/checkout/my_card/presentation/my_card_body.dart';
+import 'package:checkout_payment/features/checkout/presentation/my_card/presentation/my_card_body.dart';
 import 'package:flutter/material.dart';
-
 
 class MyCardView extends StatelessWidget {
   const MyCardView({super.key});

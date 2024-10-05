@@ -21,7 +21,6 @@ class PaymentMethodItem extends StatelessWidget {
       decoration: BoxDecoration(
         border:
             Border.all(color: isActive ? Colors.green : Colors.black, width: 2),
-       
         borderRadius: BorderRadius.circular(15),
       ),
       child: SvgPicture.asset(img),

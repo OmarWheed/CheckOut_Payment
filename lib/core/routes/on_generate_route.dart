@@ -1,6 +1,6 @@
 import 'package:checkout_payment/core/routes/route_name.dart';
-import 'package:checkout_payment/features/checkout/payment_details/presentation/payment_details_view.dart';
-import 'package:checkout_payment/features/checkout/success_payment/presentation/thank_you_view.dart';
+import 'package:checkout_payment/features/checkout/presentation/payment_details/presentation/payment_details_view.dart';
+import 'package:checkout_payment/features/checkout/presentation/success_payment/presentation/thank_you_view.dart';
 import 'package:flutter/material.dart';
 
 class AppRoute {

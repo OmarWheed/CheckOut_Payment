@@ -4,11 +4,13 @@ import 'package:checkout_payment/core/utils/styles.dart';
 
 class CustomBottom extends StatelessWidget {
   final String text;
+  final bool isLoading;
   final void Function()? onTap;
   const CustomBottom({
     super.key,
     required this.text,
     this.onTap,
+    this.isLoading = false,
   });
   @override
   Widget build(BuildContext context) {
@@ -23,11 +25,13 @@ class CustomBottom extends StatelessWidget {
           color: const Color(0xff34A853),
           borderRadius: BorderRadius.circular(15),
         ),
-        child: Text(
-          textAlign: TextAlign.center,
-          text,
-          style: Styles.textStyle22,
-        ),
+        child: isLoading
+            ? const CircularProgressIndicator()
+            : Text(
+                textAlign: TextAlign.center,
+                text,
+                style: Styles.textStyle22,
+              ),
       ),
     );
   }

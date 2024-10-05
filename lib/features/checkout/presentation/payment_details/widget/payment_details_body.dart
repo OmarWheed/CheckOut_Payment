@@ -1,7 +1,7 @@
 import 'package:checkout_payment/core/routes/route_name.dart';
 import 'package:checkout_payment/core/widget/custom_bottom.dart';
-import 'package:checkout_payment/features/checkout/payment_details/widget/custom_credit_card.dart';
-import 'package:checkout_payment/features/checkout/payment_details/widget/payment_method_list_view.dart';
+import 'package:checkout_payment/features/checkout/presentation/payment_details/widget/custom_credit_card.dart';
+import 'package:checkout_payment/features/checkout/presentation/payment_details/widget/payment_method_list_view.dart';
 import 'package:flutter/material.dart';
 
 class PaymentDetailsBody extends StatefulWidget {
@@ -43,7 +43,6 @@ class _PaymentDetailsBodyState extends State<PaymentDetailsBody> {
                       autovalidateMode = AutovalidateMode.always;
                       Navigator.of(context).pushNamed(RouteName.successPayment);
                       setState(() {});
-                      
                     }
                   },
                 ),

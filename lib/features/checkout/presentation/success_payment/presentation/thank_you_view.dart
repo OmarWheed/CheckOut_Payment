@@ -1,5 +1,5 @@
 import 'package:checkout_payment/core/widget/custom_app_bar.dart';
-import 'package:checkout_payment/features/checkout/success_payment/widget/thank_you_body.dart';
+import 'package:checkout_payment/features/checkout/presentation/success_payment/widget/thank_you_body.dart';
 import 'package:flutter/material.dart';
 
 class ThankYouView extends StatelessWidget {
