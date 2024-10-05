@@ -1,6 +1,6 @@
 import 'package:checkout_payment/core/utils/styles.dart';
 import 'package:checkout_payment/core/widget/order_details.dart';
-import 'package:checkout_payment/features/checkout/success_payment/widget/card_info_widget.dart';
+import 'package:checkout_payment/features/checkout/presentation/success_payment/widget/card_info_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

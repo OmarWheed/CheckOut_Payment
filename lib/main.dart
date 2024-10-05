@@ -1,8 +1,14 @@
 import 'package:checkout_payment/core/routes/on_generate_route.dart';
-import 'package:checkout_payment/features/checkout/my_card/views/my_card_view.dart';
+import 'package:checkout_payment/core/utils/api_keys.dart';
+import 'package:checkout_payment/features/checkout/presentation/my_card/views/my_card_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  //stripe
+  Stripe.publishableKey = ApiKeys.publishKey;
   runApp(CheckoutApp(
     appRoute: AppRoute(),
   ));

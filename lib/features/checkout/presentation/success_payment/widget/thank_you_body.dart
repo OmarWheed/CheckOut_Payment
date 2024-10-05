@@ -1,7 +1,7 @@
-import 'package:checkout_payment/features/checkout/success_payment/widget/dash_line.dart';
-import 'package:checkout_payment/features/checkout/success_payment/widget/green_check_circle.dart';
-import 'package:checkout_payment/features/checkout/success_payment/widget/half_circle.dart';
-import 'package:checkout_payment/features/checkout/success_payment/widget/thank_you_card.dart';
+import 'package:checkout_payment/features/checkout/presentation/success_payment/widget/dash_line.dart';
+import 'package:checkout_payment/features/checkout/presentation/success_payment/widget/green_check_circle.dart';
+import 'package:checkout_payment/features/checkout/presentation/success_payment/widget/half_circle.dart';
+import 'package:checkout_payment/features/checkout/presentation/success_payment/widget/thank_you_card.dart';
 import 'package:flutter/material.dart';
 
 class ThankYouViewBody extends StatelessWidget {
